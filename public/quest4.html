@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+
+    <script src="js/firebase-config.js"></script>
+    <script src="js/firebase-bd.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Music Learning</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/quest.css" rel="stylesheet" />
+    <link rel="manifest" href="./manifest.json" />
+    <script src="./pwa.dev.min.js"></script>
+    <script>
+        if (navigator.serviceWorker) {
+            navigator.serviceWorker.register('./sw.js')
+        }
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <div class="center">
+            <div class="logo"> <a href="index.html"> <img src="assets/logo.png" width="155" ;> </a> </div>
+            <!--navbar-->
+            <div class="menu">
+        
+                <a href="aulas.html">Cursos</a>/&nbsp;
+                <a href="sobre2.html">Sobre</a>/&nbsp;
+                <a href="index.html">Início</a>&nbsp;
+            </div>
+            <!--center-->
+    </header>
+    <section class="sobre">
+      <!--  <div class="">
+            <img src="assets/" width="450" />
+        </div> -->
+        <!--colocar imagem certa aqui depois, essa imagem fica no círculo do index-->
+        <div class="center">
+            <div class="texto-sobre">
+                <div class="container">
+                    <div class="row">
+                        <div class="two-thrids column">
+            
+                <h1>Nesse questionário você deverá mostrar o que aprendeu!</h1>
+                <br>
+                    <h2>Se você precisar voltar nas aulas em qualquer momento basta clicar na aba Cursos.</h2>
+                    <div id="progress_bar"></div>
+                    <br>
+                    <form class="questions_box">
+                
+                        <div id="question-1">
+                            <h2>Questão 1</h2>
+                            <br>
+                            <h3>Quais são as notas musicais?</h3>
+                            <br>
+                            <input id="question-1-answer-a" type="radio" name="favlang" value="2"> Dó, Ré, Mi, Fá, Sol, Lá, Si.<br><br>
+                            <input id="question-1-answer-b"  type="radio" name="favlang" value="0"> Pé, Dé, Ri, No, Za, Já, Ki.<br><br>
+                            <input id="question-1-answer-c" type="radio" name="favlang" value="0"> Be, Di, Gi, He, Mu, Ka, Ko.<br><br>
+                            <div id="submit1" class="button"> Próximo</div>
+                        <div class="clearfix"></div>
+                            </div>
+                
+                        <div id="question-2">
+                            <h2>Questao 2</h2>
+                            <br>
+                            <h3>Quais as cifras que tocamos na aula 3?</h3>
+                            <br>
+                            <input id="question-2-answer-a" type="radio" name="favlang" value="0"> C, Cm, B<br><br>
+                            <input id="question-2-answer-b"  type="radio" name="favlang" value="0"> G, D, Bm<br><br>
+                            <input id="question-2-answer-c" type="radio" name="favlang" value="2"> Em, Am, D<br><br>
+                            <div id="submit2" class="button"> Próximo</div>
+                        <div class="clearfix"></div>
+                            </div>
+                
+                            <div id="question-3">
+                                <h2>Questao 3</h2>
+                                <br>
+                                <h3>Como são indicados o dedo polegar e o dedo indicador nas cifras, respectivamente?</h3>
+                                <br>
+                                <input id="question-3-answer-a" type="radio" name="favlang" value="0"> D e I<br><br>
+                                <input id="question-3-answer-b"  type="radio" name="favlang" value="2"> P e I<br><br>
+                                <input id="question-3-answer-c" type="radio" name="favlang" value="0"> U e T<br><br>
+                                <div id="submit3" class="button"> Próximo</div>
+                            <div class="clearfix"></div>
+                                </div>
+                
+                                <div id="question-4">
+                                    <h2>Questão 4</h2>
+                                    <br>
+                                    <h3>O que é um acorde?</h3>
+                                    <br>
+                                    <input id="question-4-answer-a" type="radio" name="favlang" value="2"> Acordes são junções de 3 ou mais notas músicais tocadas ao mesmo tempo.<br><br>
+                                    <input id="question-4-answer-b"  type="radio" name="favlang" value="0"> Acordes são 2 notas tocadas simultaneamente.<br><br>
+                                    <input id="question-4-answer-c" type="radio" name="favlang" value="0"> Acorde não possui definição.<br><br>
+                                    <div id="submit4" class="button"> Próximo</div>
+                                <div class="clearfix"></div>
+                                    </div>
+                                
+                                        <div id="question-5">
+                                            <h2>Questão 5</h2>
+                                            <br>
+                                            <h3>O que são cifras?</h3>
+                                            <br>
+                                            <input id="question-5-answer-a" type="radio" name="favlang" value="0"> Cifras são variações de tonalidade.<br><br>
+                                            <input id="question-5-answer-b"  type="radio" name="favlang" value="2"> Cifras são os acordes nomeados por letras.<br><br>
+                                            <input id="question-5-answer-c" type="radio" name="favlang" value="0"> Cifras são marcações de tempo.<br><br>
+                                            <div id="submit5" class="button"> Enviar respostas</div>
+                                        <div class="clearfix"></div>
+                                            </div>
+                
+                
+                
+                            <div id="question-6">
+                                <h2>Obrigado por responder.</h2><br><br>
+                                <h2>A escala é de 0 a 10.</h2><br><br>
+                                <h3>Se sua pontuação foi NaN você deve ter esquecido de responder alguma pergunta, faça novamente!</h3><br><br>
+                                <h3>Se sua pontuação foi menor que 5 então é uma boa ideia rever as aulas e então refazer o questionário!</h3><br><br>
+                                <h3>Se sua pontuação foi maior que 5 então você está de parabéns!</h3><br><br>
+                                <h3>Aperte no botão para continuar.</h3><br><br>
+                                <h3>Sua pontuação foi de: </h3>
+                                <h1 id="printtotalscore"></h1>
+                                <p id="printtotalscoreinfo"></p>
+                            </div>
+                    </form>
+                </div>    
+                </div>
+                <a href="quest4.html"> <button class="button3">Refazer questionário</button> </a>
+            <script src="js/quest.js"></script>
+            </div>
+
+        </div>
+    </section>
+</body>
+
+</html>

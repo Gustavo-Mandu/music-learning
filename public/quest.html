@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+
+    <meta charset="UTF-8">
+    <title>Questionario</title>
+    <link rel="stylesheet" href="css/quest.css">
+    <link rel="manifest" href="./manifest.json" />
+    <script src="./pwa.dev.min.js"></script>
+    <script> if (navigator.serviceWorker) 
+    { navigator.serviceWorker.register ('./sw.js') } </script>
+</head>
+<body>
+
+   
+
+    <div class="container">
+        <div class="row">
+            <div class="two-thrids column">
+
+    <h1>Nesse questionário você deverá mostrar o que aprendeu!</h1>
+
+    
+
+    <div id="progress_bar"></div> <br>
+    <h2>Se você precisar voltar nas aulas em qualquer momento aperte o botão "Voltar ao início".</h2>
+    <form class="questions_box">
+        <h1>EASTER EGG / BLINK182 / CHOPIN / BIBLIOTECA</h1> <br>
+
+        <div id="question-1">
+            
+        <h2>Questão 1</h2>
+        <br>
+        <h3>Quais são as notas musicais?</h3>
+        <br>
+        <input id="question-1-answer-a" type="radio" name="favlang" value="0"> Pé, Dé, Ri, No, Za, Já, Ki.<br><br>
+        <input id="question-1-answer-b"  type="radio" name="favlang" value="2"> Dó, Ré, Mi, Fá, Sol, Lá, Si.<br><br>
+        <input id="question-1-answer-c" type="radio" name="favlang" value="0"> Be, Di, Gi, He, Mu, Ka, Ko.<br><br>
+        <div id="submit1" class="button"> Próximo</div>
+    <div class="clearfix"></div>
+        </div>
+
+        <div id="question-2">
+            <h2>Questão 2</h2>
+            <br>
+            <h3>Como formar acorder maiores?</h3>
+            <br>
+            <input id="question-2-answer-a" type="radio" name="favlang" value="2">  Contar 4 semitons, apertar e depois contar mais 3 semitons.<br><br>
+            <input id="question-2-answer-b"  type="radio" name="favlang" value="0">  Contar 2 semitons, apertar e depois contar mais 3 semitons.<br><br>
+            <input id="question-2-answer-c" type="radio" name="favlang" value="0">  Contar 3 semitons, apertar e depois contar mais 3 semitons.<br><br>
+            <div id="submit2" class="button"> Próximo</div>
+        <div class="clearfix"></div>
+            </div>
+
+            <div id="question-3">
+                <h2>Questão 3</h2>
+                <br>
+                <h3>Como formar acordes menores?</h3>
+                <br>
+                <input id="question-3-answer-a" type="radio" name="favlang" value="2"> Contar 3 semitons, apertar e depois contar mais 4 semitons.<br><br>
+                <input id="question-3-answer-b"  type="radio" name="favlang" value="0"> Contar 2 semitons, apertar e depois contar mais 4 semitons.<br><br>
+                <input id="question-3-answer-c" type="radio" name="favlang" value="0"> Contar 5 semitons, apertar e depois contar mais 4 semitons.<br><br>
+                <div id="submit3" class="button"> Próximo</div>
+            <div class="clearfix"></div>
+                </div>
+
+                <div id="question-4">
+                    <h2>Questão 4</h2>
+                    <br>
+                    <h3>Quais são as cifras que aprendemos?</h3>
+                    <br>
+                    <input id="question-4-answer-a" type="radio" name="favlang" value="0"> Q, Qm, X, Xm, V, Vm, F, Fm, Z, Zm, I, Im, P, Pm.<br><br>
+                    <input id="question-4-answer-b"  type="radio" name="favlang" value="0"> J, Jm, O, Om, Y, Ym, T, Tm, R, Rm, N, Nm, U, Um.<br><br>
+                    <input id="question-4-answer-c" type="radio" name="favlang" value="2"> C, Cm, D, Dm, E, Em, F, Fm, G, Gm, A, Am, B, Bm.<br><br>
+                    <div id="submit4" class="button"> Próximo</div>
+                <div class="clearfix"></div>
+                    </div>
+                
+                    <div id="question-5">
+                        <h2>Questão 5</h2>
+                        <br>
+                        <h3>O que são cifras?</h3>
+                        <br>
+                        <input id="question-5-answer-a" type="radio" name="favlang" value="2"> Cifras são os acordes nomeados por letras.<br><br>
+                        <input id="question-5-answer-b"  type="radio" name="favlang" value="0"> Cifras são notas musicais.<br><br>
+                        <input id="question-5-answer-c" type="radio" name="favlang" value="0"> Cifras são marcações de tempo.<br><br>
+                        <div id="submit5" class="button"> Enviar respostas</div>
+                    <div class="clearfix"></div>
+                        </div>
+
+
+                        
+            <div id="question-6">
+                <h2>Obrigado por responder.</h2><br><br>
+                <h2>A escala é de 0 a 10.</h2><br><br>
+                <h3>Se sua pontuação foi NaN você deve ter esquecido de responder alguma pergunta, faça novamente!</h3><br><br>
+                <h3>Se sua pontuação foi menor que 5 então é uma boa ideia rever as aulas e então refazer o questionário!</h3><br><br>
+                <h3>Se sua pontuação foi maior que 5 então você está de parabéns!</h3><br><br>
+                <h3>Aperte no botão para continuar.</h3><br><br>
+                <h3>Sua pontuação foi de: </h3>
+                <h1 id="printtotalscore"></h1>
+                <p id="printtotalscoreinfo"></p>
+            </div>
+    </form>
+</div>    
+</div>
+<a href="aula1-piano.html"> <button class="button3"> Voltar ao início</button> </a>
+</div>
+
+<script src="js/quest.js"></script>
+</body>
+</html>

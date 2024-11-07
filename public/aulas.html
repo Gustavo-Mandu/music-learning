@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Music Learning</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="manifest" href="./manifest.json" />
+    <script src="./pwa.dev.min.js"></script>
+    <script>
+        if (navigator.serviceWorker) {
+            navigator.serviceWorker.register('./sw.js')
+        }
+    </script>
+
+</head>
+
+<body>
+
+
+
+    <header>
+        <div class="center">
+            <div class="logo"> <a href="index.html"> <img src="assets/logo.png" width="155" ;> </a> </div>
+            <!--navbar-->
+            <div class="menu">      
+                <a href="aulas.html">Cursos</a>/&nbsp;
+                <a href="sobre2.html">Sobre</a>/&nbsp;
+                <a href="index.html">Início</a>&nbsp;
+
+            </div>
+            <!--center-->
+    </header>
+    <section class="sobre">
+        <div class="extras">
+            <img src="assets/pianoteste.png" width="625">
+        </div>
+        <!--colocar imagem certa aqui depois, essa imagem fica no círculo do index-->
+        <div class="center">
+            <div class="texto-sobre">
+                <br><h1>Aqui estão os instrumentos disponíveis: </br>
+                    <span style="color: orange;">Piano</span> e <span style="color: orange;">Violão</span> são os instrumentos no momento. <br/> </h1>
+                <p>Venha aprender música com a gente!</p>
+                <h1>Escolha entre um dos dois: </h1><br>
+             <div class="pianoclass">
+                 <a href="piano.html"> <img src="assets/piano10.png" width="300px"> </a>
+                 <a href="violao.html"> <img src="assets/violao10.png" width="300px"> </a>
+             </div>
+                </div>
+            </div>
+            
+    </section>
+
+    <footer>Copyright © 2022 Music Learning</footer>
+</body>
+
+</html>

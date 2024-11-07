@@ -1,0 +1,431 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Genneva, Tahoma, sans-serif;
+}
+
+.center {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1480px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+html,
+body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    height: 200px;
+    padding: 20px 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgb(250, 250, 250), rgba(0, 0, 0, 0.20)), url('../assets/');
+    background-position: center;
+    background-size: cover;
+}
+
+.logo {
+    width: 43%;
+}
+
+.menu {
+    padding-top: 30px;
+    width: 50%;
+    text-align: right;
+}
+
+.menu a {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    margin-right: 15px;
+    font-size: 22px;
+}
+
+header .menu a {
+    color: rgb(0, 0, 0);
+    border-radius: 3px;
+    transition: 200ms;
+}
+
+header .menu .ativo,
+header .menu a:hover {
+    color: rgb(20, 17, 17);
+    background-color: #eb9d29;
+}
+
+section.sobre {
+    height: calc(100% - 200px);
+    position: relative;
+}
+
+.extras {
+    position: absolute;
+    bottom: -300px;
+    right: -250px;
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    background-color: #eb9d29;
+}
+
+.texto-sobre {
+    margin-top: 0px;
+}
+
+
+.texto-sobre h1 {
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.texto-sobre p {
+    margin: 20px 0;
+    color: black;
+    font-size: 17px;
+    font-weight: 600;
+    max-width: 800px;
+}
+
+.texto-sobre button {
+    border: 0;
+    background-color: #eb9d29;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    border-radius: 10px;
+    width: 180px;
+    height: 50px;
+    cursor: pointer;
+    transition: all 0.3 ease;
+    -webkit-transition: all 0.3 ease;
+    outline: 0;
+}
+
+.texto-sobre button:hover,
+.texto-sobre button:active,
+.texto-sobre button:focus {
+    background: #d69410;
+}
+
+.button1:hover,
+.button1:active,
+.button1:focus {
+    background: #d69410;
+}
+
+.button2:hover,
+.button2:active,
+.button2:focus {
+    background: #d69410;
+}
+
+.button1 {
+    border: 0;
+    background-color: #eb9d29;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    border-radius: 10px;
+    width: 180px;
+    height: 59px;
+    cursor: pointer;
+    transition: all 0.3 ease;
+    -webkit-transition: all 0.3 ease;
+    outline: 0;
+    list-style-type: none;
+    position: fixed;
+    right: 5%;
+    top: 79%;
+    width: 11em;
+    margin-top: -5.9em;
+    z-index: 1;
+}
+
+.button2 {
+    border: 0;
+    background-color: #eb9d29;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    border-radius: 10px;
+    width: 180px;
+    height: 59px;
+    cursor: pointer;
+    transition: all 0.3 ease;
+    -webkit-transition: all 0.3 ease;
+    outline: 0;
+    list-style-type: none;
+    position: fixed;
+    right: 86%;
+    top: 79%;
+    width: 11em;
+    margin-top: -5.9em;
+    z-index: 1;
+}
+
+@media (max-width: 1050px) {
+    .button1{
+        width: 130px;
+        margin-top: 100px;
+        
+    }
+}
+
+@media (max-width: 1050px) {
+    .button2{
+        width: 130px;
+        margin-top: 100px;
+        
+    }
+}
+
+@media (max-width: 1350px) {
+    .texto-sobre h2 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 1250px) {
+    .texto-sobre h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .texto-sobre h2 {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 750px) {
+    .texto-sobre h2 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 650px) {
+    .texto-sobre h2 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 500px) {
+    .texto-sobre h2 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 250px) {
+    .texto-sobre h2 {
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width: 1430px) {
+    .extras {
+        width: 650px;
+        height: 650px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .extras {
+        width: 600px;
+        height: 600px;
+    }
+}
+
+@media (max-width: 1180px) {
+    .extras {
+        width: 550px;
+        height: 550px;
+    }
+}
+
+@media (max-width: 1080px) {
+    .extras {
+        width: 500px;
+        height: 500px;
+    }
+}
+
+@media (max-width: 980px) {
+    .extras {
+        width: 450px;
+        height: 450px;
+    }
+}
+
+@media (max-width: 880px) {
+    .extras {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 780px) {
+    .extras {
+        width: 350px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 680px) {
+    .extras {
+        width: 300px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 580px) {
+    .extras {
+        width: 250px;
+        height: 400px;
+    }
+}
+
+
+@media (max-width: 920px) {
+    .texto-sobre form{
+        margin-top: 255px;
+    }
+}
+
+@media (max-width: 700px) {
+    .texto-sobre form{
+        margin-top: 275px;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .texto-sobre h1 {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 600px) {
+    .texto-sobre h1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    .texto-sobre h1 {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 400px) {
+    .texto-sobre h1 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 300px) {
+    .texto-sobre h1 {
+        font-size: 17px;
+    }
+}
+
+footer {
+    background-color: linear-gradient(rgb(250, 250, 250), rgba(0, 0, 0, 0.20));
+    text-align: center;
+    padding: 10px;
+    padding-top: 267px;
+    font-weight: 900;
+}
+
+nav.navbar navbar-expand-lg navbar-dark bg-primary {
+    background-color: aqua;
+}
+
+.total {
+    width: 500px;
+}
+
+.carimg1 {
+    margin-right: 100px;
+}
+
+.carousel {
+    border-radius: 10px;
+    background-color: orange;
+    padding: 5px;
+    max-width: 900px;
+    margin: 0 right;
+}
+
+.carousell {
+    border-radius: 5px;
+    background-color: orange;
+    padding-left: 5px;
+    max-width: 900px;
+    margin: 0 right;
+}
+
+.li {
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.li1 {
+    float: inline-end;
+    padding: 5px;
+    margin: 0;
+}
+
+.ul1 {
+    list-style-type: none;
+    position: fixed;
+    right: 0;
+    top: 40%;
+    width: 5.0em;
+    margin-top: -2.5em;
+}
+
+.h2-aula01-violao {
+    position: absolute;
+    font-size: 42px;
+    top: -95px;
+    left: 485px;
+}
+
+.h2-aula01-piano {
+    position: absolute;
+    font-size: 42px;
+    top: -95px;
+    left: 290px;
+}
+
+
+
+.videopiano {
+    display: flex;
+    border-right: 50%;
+    margin: 0 auto;
+    height: 530px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    margin-left: auto;
+
+}
+
+.piano2 {
+    border-radius: 10px;
+    background-color: orange;
+    padding: 5px;
+    max-width: 1000px;
+    max-height: 600px;
+    margin:auto;
+    height: 591px;
+    overflow-x: hidden;
+    
+}
